@@ -1,0 +1,53 @@
+#tittle{
+    color: red;
+}
+
+body{
+    background-color: rgb(29, 28, 28);
+}
+
+#TAREAS{
+    text-align: center;
+    margin-top: 40px;
+}
+#save{
+    margin-top: 30px;   
+    border-bottom: 900px;
+    border-color: white;
+    width: 150px;
+    color: white;
+    background-color: black;
+}
+#cajatxt{
+    border-bottom: 900px;
+    border-color: white;
+    width: 300px;
+    color: white;
+    background-color: black;
+}
+
+#tittle{
+    text-align: center;
+    margin-top: 80px;
+}
+
+#lista{
+
+    margin-top: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-color: white;
+    height: 0px;
+    
+}
+
+#delete{
+
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgb(29, 28, 28);
+    color: white;
+    border-color: red;
+}
+
