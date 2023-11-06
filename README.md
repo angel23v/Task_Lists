@@ -1,2 +1,3 @@
 # Task_List
-Task list using localStorage from javascript
+Task lists using localStorage on javascript
+Two task lists practicing localStorage // Styles updated
