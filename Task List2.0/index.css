@@ -1,0 +1,304 @@
+body {
+  padding: 0;
+  background-color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.inputTask {
+  border: 1px solid #d1d1d6; /* Cambiado a un gris claro similar al estilo de Apple */
+  border-radius: 10px; /* Ajustado el radio del borde */
+  padding: 10px;
+  width: 50%; /* Ocupa todo el ancho disponible */
+}
+
+.inputTask:focus {
+  border-color: #007bff; /* Cambiado a un azul similar al estilo de Apple */
+  outline: none; /* Quita el contorno predeterminado en algunos navegadores */
+}
+
+.btnSend {
+  background-color: #007bff; /* Color de fondo azul similar al estilo de Apple */
+  color: white; /* Color de texto blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btnSend:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón, similar al estilo de Apple */
+}
+
+.tarea {
+  color: black; /* Cambiado a negro, común en el estilo Apple */
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid #d1d1d6; /* Cambiado a un gris claro similar al estilo de Apple */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: block;
+}
+
+form {
+  margin-left: 30%;
+}
+
+.changeColor {
+  background-color: green;
+}
+
+.divTarea {
+  text-align: left;
+  width: 50%; /* Ancho del div */
+  margin-left: 40%;
+  height: 300px;
+  position: relative;
+  border-radius: 15px;
+  border-style: solid; /* Cambiado a un estilo de borde sólido */
+  border-color: #d3d3d3; /* Cambiado a un color gris claro similar a Apple */
+  background-color: #f9f9f9; /* Cambiado a un color gris claro similar a Apple */
+  overflow-y: auto; /* Barra para buscar dentro del contenido del div */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra similar a Apple */
+}
+
+.divTarea .check {
+  margin-left: 100%;
+  cursor: pointer;
+}
+
+.divTasks {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  height: 100px;
+  position: relative;
+}
+
+.divTasks input {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.divTasks button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.divTasks label {
+  padding: 10px 20px;
+  margin-left: 100px;
+  color: white;
+  font-size: 16px;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0; /* Gris claro similar al estilo de Apple */
+  color: #000; /* Texto negro */
+  border: none;
+  padding: 20px;
+  border-radius: 10px; /* Ajustado el radio del borde */
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  width: 60%; /* Ajustado el ancho */
+  max-width: 400px; /* Establecido un ancho máximo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra similar a las interfaces de Apple */
+}
+.error:hover {
+  opacity: 0.9; /* Cambia la opacidad al pasar el ratón */
+}
+
+.eliminar {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  margin-left: 33%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9; /* Gris claro similar al estilo de Apple */
+  color: black; /* Texto negro */
+  padding: 20px;
+  border: 2px solid black; /* Borde rojo */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  width: 25%; /* Ancho del div */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra similar a las interfaces de Apple */
+}
+
+.si {
+  background-color: #28a745; /* Verde similar al estilo de Apple */
+  color: #fff; /* Color de texto blanco */
+  border: none; /* Sin borde */
+  padding: 15px 30px; /* Relleno interno */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease;
+}
+
+.no {
+  background-color: #ff3b30; /* Rojo similar al estilo de Apple */
+  color: #fff; /* Color de texto blanco */
+  border: none; /* Sin borde */
+  padding: 15px 30px; /* Relleno interno */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease;
+}
+
+.no:hover {
+  background-color: #cc0000; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.mensaje {
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  margin-right: 10px; /* Espacio a la derecha del label */
+}
+
+.error.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.eliminar.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.eliminar-btn {
+  background-color: transparent;
+  color: black;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 99%;
+}
+
+/* Estilos para el icono */
+.eliminar-btn i {
+  border: none;
+}
+
+/*Estilos para el contenedor del menú */
+.containerOpciones {
+  background-color: #f9f9f9; /* Cambiado a un gris claro similar al estilo de Apple */
+  padding: 20px;
+  border: none; /* Eliminado el borde */
+  border-radius: 10px;
+  max-width: 300px;
+
+  margin: -25% -30px auto 30px; /* Ajusta la margen superior (márgenes negativos para superponer) */
+  position: relative; /* Posición relativa */
+  z-index: 1; /* Asegura que esté encima del div superior */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregada una sombra similar a las interfaces de Apple */
+}
+
+/* Estilos para la etiqueta "Ordenar por" */
+.ordenarOp {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Estilos para las opciones del menú */
+.opciones {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 10px; /* Ajustado el radio del borde */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center; /* Cambiado a centrar el texto */
+  background-color: #f9f9f9; /* Cambiado a un gris claro similar al estilo de Apple */
+  color: black; /* Cambiado a negro, común en el estilo Apple */
+}
+
+.opciones:hover {
+  background-color: #e0e0e0; /* Cambia el color de fondo al pasar el ratón */
+  color: black; /* Cambiado a blanco */
+}
+
+/* Estilos para el botón "Eliminar todas las tareas" */
+.deleteAll {
+  padding: 10px;
+  background-color: #ff3b30; /* Cambiado a un rojo similar al estilo de Apple */
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Ajustado el radio del borde */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  text-align: center; /* Cambiado a centrar el texto */
+}
+
+.deleteAll:hover {
+  background-color: #cc0000; /* Cambia el color de fondo*/
+}
+
+.eliminarAll {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  margin-left: 33%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9; /* Gris claro similar al estilo de Apple */
+  color: black; /* Texto negro */
+  padding: 20px;
+  border: 2px solid black; /* Borde rojo */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  width: 25%; /* Ancho del div */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra similar a las interfaces de Apple */
+}
+
+.eliminarAll.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.siAll {
+  background-color: #28a745; /* Verde similar al estilo de Apple */
+  color: #fff; /* Color de texto blanco */
+  border: none; /* Sin borde */
+  padding: 15px 30px; /* Relleno interno */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease;
+}
+
+.noAll {
+  background-color: #ff3b30; /* Rojo similar al estilo de Apple */
+  color: #fff; /* Color de texto blanco */
+  border: none; /* Sin borde */
+  padding: 15px 30px; /* Relleno interno */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease;
+}

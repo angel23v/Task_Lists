@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+  </head>
+  <body>
+    <div class="divTasks">
+      <h1>Task List</h1>
+      <form class="form">
+        <input type="text" class="inputTask" placeholder="type a task..." />
+        <button class="btnSend">➤</img></button>
+        <label class="tittle"></label>
+      </form>
+    </div>
+    <div class="divTarea">
+      
+    </div>
+    <div class="error hidden">
+      No se puede añadir una tarea vacia <br>
+      <button class="no">Aceptar</button>
+    </div>
+    <div class="eliminar hidden">
+      <label class="mensaje">¿Seguro que quieres eliminar esta tarea?</label> <br>
+      <button class="si">Si</button><button class="no">Cancelar</button>
+    </div>
+    <div class="containerOpciones">
+      <label class="ordenarOp">Ordenar por:</label>
+    <button class="opciones firstTask">Restablecer</button>
+    <button class="opciones ordenAlfabetico">Orden Alfabetico</button>
+    <button class="opciones lastTask">Ultima tarea</button>
+
+    <button class="deleteAll">Eliminar todas las tareas</button>
+    
+    </div>
+
+    <div class="eliminarAll hidden">
+      <label class="mensaje">¿Seguro que quieres eliminar todas las tareas?</label> <br>
+      <button class="siAll">Si</button><button class="noAll">Cancelar</button>
+    </div>
+
+  </body>
+  <script src="index.js"></script>
+  <script src="buttons.js"></script>
+  <!-- By: Jose Angel Vazquez Virgen // Don´t delete this message -->
+</html>
